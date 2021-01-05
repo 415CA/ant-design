@@ -1,10 +1,11 @@
 import { Layout } from 'antd';
 import React, { useContext } from 'react';
 import useDrawerToggle from '../../hooks/DrawerToggle';
-import NavBar from './NavBar';
-import { SideBarContainer, SideBarItems } from './SideBar';
-import TopicMenu from './Menu';
+import NavBar from '../AntDesign/Navigation/NavBar';
+import SideBar from '../AntDesign/Navigation/SideBar';
+import TopicMenu from '../AntDesign/Navigation/TopicMenu';
 import { AuthContext } from '../Authentication/Firebase/Context';
+import SideBarItems from './sbitems';
 
 const Navigation = ({ children }) => {
   const { currentUser } = useContext(AuthContext);
@@ -23,7 +24,7 @@ const Navigation = ({ children }) => {
     <>
       <NavBar menu={Menu} />
       <Layout>
-        <SideBarContainer menu={Menu} />
+        <SideBar menu={Menu} />
         <Content>{children}</Content>
       </Layout>
     </>

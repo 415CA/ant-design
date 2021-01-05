@@ -5,8 +5,11 @@ import * as ROUTES from '../../constants/Routes';
 import NavBar from './Navigation/NavBar';
 import SideBar from './Navigation/SideBar';
 import TopicMenu from './Navigation/TopicMenu';
+import useDrawerToggle from '../../hooks/DrawerToggle';
 
 const AntDesign = () => {
+  const { selectedKey, changeSelectedKey, contentIndex } = useDrawerToggle;
+
   const topics = [
     <Link to={ROUTES.LANDING}>Landing</Link>,
     <Link to={ROUTES.SIGN_IN}>Sign In</Link>,
