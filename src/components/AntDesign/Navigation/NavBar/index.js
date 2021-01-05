@@ -1,7 +1,7 @@
 import { MenuOutlined } from '@ant-design/icons';
 import { Button, Drawer } from 'antd';
 import React, { useState } from 'react';
-import StyledNav from './Style';
+import StyledNav from './Style'; 
 
 const NavBar = ({ menu }) => {
   const [visible, setVisible] = useState(false);
