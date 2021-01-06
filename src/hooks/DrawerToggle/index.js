@@ -1,12 +1,11 @@
 import { useState } from 'react';
 
 const useDrawerToggle = () => {
-  const [contentIndex, setContentIndex] = useState(0);
   const [selectedKey, setSelectedKey] = useState('0');
 
-  const changeSelectedKey = ({ key }) => {
+  const changeSelectedKey = (event) => {
+    const { key } = event;
     setSelectedKey(key);
-    setContentIndex(key);
   };
 
   return { selectedKey, changeSelectedKey };

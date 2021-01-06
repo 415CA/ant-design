@@ -9,7 +9,7 @@ import PasswordForget from '../../pages/PasswordForget';
 import SignIn from '../../pages/SignIn';
 import SignUp from '../../pages/SignUp';
 import PrivateRoute from '../Authentication/Private';
-import Navigation from '../Navigation1/test';
+import Navigation from '../Navigation';
 
 const NoMatch = () => (
   <>

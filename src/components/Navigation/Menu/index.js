@@ -1,17 +1,20 @@
 import { Menu } from 'antd';
 import React from 'react';
+import useDrawerToggle from '../../../hooks/DrawerToggle';
 
-const NavMenu = ({ topics, selectedKey, changeSelectedKey }) => {
-  const styledTopics = topics.map((topic, index) => (
+const SideBarMenu = ({ links }) => {
+  const { selectedKey, changeSelectedKey } = useDrawerToggle;
+
+  const styledLinks = links.map((link, index) => (
     <Menu.Item key={index} onClick={changeSelectedKey}>
-      {topic}
+      {link}
     </Menu.Item>
   ));
 
   return (
     <Menu mode='inline' selectedKeys={[selectedKey]}>
-      {styledTopics}
+      {styledLinks}
     </Menu>
   );
 };
-export default NavMenu;
+export default SideBarMenu;
