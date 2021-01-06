@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import * as ROUTES from '../../constants/Routes';
 import { Account, Admin, Home, Landing, PasswordForget, SignIn, SignUp } from '../../pages';
-import PrivateRoute from '../Authentication/Private';
+import { PrivateRoute } from '../Authentication';
 import Navigation from '../Navigation';
 
 const NoMatch = () => (

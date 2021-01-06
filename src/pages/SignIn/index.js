@@ -2,7 +2,7 @@ import React, { useCallback, useContext } from 'react';
 import { useDispatch } from 'react-redux';
 import { Redirect, withRouter } from 'react-router';
 import { AuthContext } from '../../components/Authentication/Firebase/Context';
-import { authentication } from '../../components/Authentication/Firebase/Firebase';
+import { authentication } from '../../components/Authentication/Firebase/Initialization';
 import * as ROUTES from '../../constants/Routes';
 import { setUserStatus } from '../../redux/slices/User';
 import SignInForm from './Form';

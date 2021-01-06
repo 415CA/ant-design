@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { authentication } from '../../components/Authentication/Firebase/Firebase';
+import { authentication } from '../../components/Authentication/Firebase/Initialization';
 import { removeUserStatus } from '../../redux/slices/User';
 
 const SignOutButton = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { authentication } from '../../components/Authentication/Firebase/Firebase';
+import { authentication } from '../../components/Authentication/Firebase/Initialization';
 
 const Home = () => (
   <>

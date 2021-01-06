@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { withRouter } from 'react-router';
-import { authentication } from '../../components/Authentication/Firebase/Firebase';
+import { authentication } from '../../components/Authentication/Firebase/Initialization';
 import * as ROUTES from '../../constants/Routes';
 import PasswordChangeForm from './Form';
 
