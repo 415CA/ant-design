@@ -18,6 +18,7 @@ const SideBarItems = {
   ],
   nonAuthorized: [
     <Link to={ROUTES.LANDING}>Landing</Link>,
+    <Link to={ROUTES.MAS}>MAS Challenge</Link>,
     <Link to={ROUTES.SIGN_IN}>Sign In</Link>,
   ],
 };

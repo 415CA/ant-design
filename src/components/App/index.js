@@ -1,13 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import * as ROUTES from '../../constants/Routes';
-import Account from '../../pages/Account';
-import Admin from '../../pages/Admin';
-import Home from '../../pages/Home';
-import Landing from '../../pages/Landing';
-import PasswordForget from '../../pages/PasswordForget';
-import SignIn from '../../pages/SignIn';
-import SignUp from '../../pages/SignUp';
+import { Account, Admin, Home, Landing, PasswordForget, SignIn, SignUp } from '../../pages';
 import PrivateRoute from '../Authentication/Private';
 import Navigation from '../Navigation';
 
@@ -22,6 +16,7 @@ const App = () => (
     <Router>
       <Navigation>
         <Switch>
+          <Route exact path={ROUTES.MAS} component={Landing} />
           <Route exact path={ROUTES.LANDING} component={Landing} />
           <Route exact path={ROUTES.SIGN_UP} component={SignUp} />
           <Route exact path={ROUTES.SIGN_IN} component={SignIn} />
